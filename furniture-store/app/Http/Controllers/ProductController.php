@@ -22,6 +22,8 @@ class ProductController extends Controller
     public function getSingleProduct(int $id)
     {
         $products = Product::find($id);
-        return view('product', ['product' => $products]);
+        $similarProduct = Product::find($products->related);
+        return view('product', ['product' => $products, 'similarProduct' => $similarProduct]);
     }
+
 }

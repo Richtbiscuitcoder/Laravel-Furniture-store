@@ -23,7 +23,7 @@
         <div class="bg-slate-100 p-5">
             <div class="flex justify-between items-center">
                 <h3 class="text-2xl">Price: £{{$product->price}}</h3>
-                <span class="bg-teal-500 text-2xl px-2 py-1 rounded">54</span>
+                <span class="bg-teal-500 text-2xl px-2 py-1 rounded">{{$product->stock}}</span>
             </div>
             <p>Color: {{$product->color}}</p>
             <a href="/products/{{ $product->id }}" class="inline-block bg-blue-600 px-3 py-2 rounded text-white mt-1">More >></a>
