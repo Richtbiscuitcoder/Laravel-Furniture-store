@@ -24,6 +24,7 @@
     <p>If this is not the right product for you, use the back button below to see our wide selection of other products.</p>
 </header>
 
+<a href="/products" class="inline-block bg-blue-600 px-3 py-2 rounded text-white mt-1 ml-20">Home</a>
 
 <section class="container mx-auto md:w-2/3 border p-8 mt-5">
 
