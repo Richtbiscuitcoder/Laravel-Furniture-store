@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+//use App\Services\CurrencyConversionService;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -22,8 +23,10 @@ class ProductController extends Controller
     public function getSingleProduct(int $id)
     {
         $products = Product::find($id);
+//        $products->price = CurrencyConversionService::convertPrice('$', $products->price);
         $similarProduct = Product::find($products->related);
         return view('product', ['product' => $products, 'similarProduct' => $similarProduct]);
     }
+
 
 }

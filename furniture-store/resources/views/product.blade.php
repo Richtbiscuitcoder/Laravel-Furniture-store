@@ -12,11 +12,20 @@
 <nav class="bg-slate-800 py-2 px-5 flex justify-between items-center">
     <span class="text-4xl text-white">Furniture Store</span>
 
-    <div class="text-yellow-300 border border-yellow-300 rounded">
-        <a href="mm" class="border-r border-yellow-300 hover:bg-yellow-300 hover:text-slate-800 px-2 py-1">mm</a><!--
-        --><a href="cm" class="border-r border-yellow-300 hover:bg-yellow-300 hover:text-slate-800 px-2 py-1">cm</a><!--
-        --><a href="in" class="border-r border-yellow-300 hover:bg-yellow-300 hover:text-slate-800 px-2 py-1">in</a><!--
-        --><a href="ft" class="px-2 py-1 hover:bg-yellow-300 hover:text-slate-800">ft</a>
+    <div class="flex gap-5">
+        <div class="text-teal-500 border border-teal-500 rounded">
+            <a href="/products/gbp" class="border-r border-teal-500 hover:bg-teal-500 hover:text-slate-800 px-2 py-1">£</a><!--
+        --><a href="/products/usd" class="border-r border-teal-500 hover:bg-teal-500 hover:text-slate-800 px-2 py-1">$</a><!--
+        --><a href="/products/eur" class="border-r border-teal-500 hover:bg-teal-500 hover:text-slate-800 px-2 py-1">€</a><!--
+        --><a href="/products/yen" class="px-2 py-1 hover:bg-teal-500 hover:text-slate-800">¥</a>
+        </div>
+
+        <div class="text-yellow-300 border border-yellow-300 rounded">
+            <a href="mm" class="border-r border-yellow-300 hover:bg-yellow-300 hover:text-slate-800 px-2 py-1">mm</a><!--
+            --><a href="cm" class="border-r border-yellow-300 hover:bg-yellow-300 hover:text-slate-800 px-2 py-1">cm</a><!--
+            --><a href="in" class="border-r border-yellow-300 hover:bg-yellow-300 hover:text-slate-800 px-2 py-1">in</a><!--
+            --><a href="ft" class="px-2 py-1 hover:bg-yellow-300 hover:text-slate-800">ft</a>
+        </div>
     </div>
 </nav>
 
@@ -29,7 +38,7 @@
 <section class="container mx-auto md:w-2/3 border p-8 mt-5">
 
     <div class="flex justify-between items-start">
-        <h1 class="text-5xl">{{$product->color}} - £{{$product->price}}</h1>
+        <h1 class="text-5xl">{{$product->color}} - {{$product->price}}</h1>
         <span class="bg-teal-500 px-2 rounded">Stock: {{$product->stock}}</span>
     </div>
     <h2 class="text-3xl mt-3">Dimensions</h2>

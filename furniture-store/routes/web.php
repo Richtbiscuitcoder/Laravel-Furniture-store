@@ -7,5 +7,8 @@ Route::get('/products', [ProductController::class, 'allProducts']);
 
 Route::get('/products/{id}', [ProductController::class, 'getSingleProduct']);
 
-
+//Route::get('/products/gbp' , [CurrencyConversionService::class, 'convertPrice']);
+//Route::get('/products/usd' , [CurrencyConversionService::class, 'convertPrice']);
+//Route::get('/products/eur' , [CurrencyConversionService::class, 'convertPrice']);
+//Route::get('/products/yen' , [CurrencyConversionService::class, 'convertPrice']);
 
