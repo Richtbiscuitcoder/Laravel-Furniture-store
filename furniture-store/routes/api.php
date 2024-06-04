@@ -10,3 +10,5 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/products', [ProductAPIController::class, 'index']);
+
+Route::post('/products', [ProductAPIController::class, 'create']);
