@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class CategoryFactory extends Factory
 {
-
     /**
      * Define the model's default state.
      *
@@ -19,8 +18,7 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->text(20),
-           // 'product_id' => Product::factory()
+            'name' => $this->faker->text(),
         ];
     }
 }

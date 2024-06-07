@@ -3,8 +3,9 @@
 namespace Database\Factories;
 
 use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product>
@@ -27,7 +28,7 @@ class ProductFactory extends Factory
             'price' => $this->faker->randomDigit(),
             'stock' => $this->faker->randomDigit(),
             'related' => $this->faker->randomDigit(),
-            'color' => $this->faker->text(10)
+            'color' => $this->faker->colorName(),
         ];
     }
 }
